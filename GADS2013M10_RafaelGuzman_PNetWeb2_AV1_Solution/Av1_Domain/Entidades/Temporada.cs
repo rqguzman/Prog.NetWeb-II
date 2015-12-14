@@ -23,7 +23,7 @@ namespace Av1_Domain.Entidades
 
         public Temporada()
         {
-            this.EpisodiosDaTemporada = new List<Episodio>();
+            EpisodiosDaTemporada = new List<Episodio>();
         }
     }
 }

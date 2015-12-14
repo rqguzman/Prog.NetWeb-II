@@ -11,7 +11,7 @@ namespace Av1_Domain.Entidades
 
         public CanalDeTv()
         {
-            this.SeriesDesteCanal = new List<Serie>();
+            SeriesDesteCanal = new List<Serie>();
         }
     }
 }

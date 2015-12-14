@@ -24,17 +24,17 @@ namespace Av1_Domain.Entidades
 
         public virtual PaisDeOrigemSerie PaisDeOrigemSerie { get; set; }
 
-        public int CanalId { get; set; }
+        public int CanalDetvId { get; set; }
 
         public virtual CanalDeTv CanalDeTv { get; set; }
 
-        public ICollection<GeneroDaSerie> GenerosDaSerie { get; set; }
+        public virtual ICollection<GeneroDaSerie> GenerosDaSerie { get; set; }
 
-        public ICollection<Temporada> TemporadasDestaSerie { get; set; }
+        public virtual ICollection<Temporada> TemporadasDestaSerie { get; set; }
 
         public Serie()
         {
-            this.TemporadasDestaSerie = new List<Temporada>();
+            TemporadasDestaSerie = new List<Temporada>();
         }
     }
 }
